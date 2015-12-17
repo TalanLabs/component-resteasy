@@ -17,7 +17,7 @@ public class SynaptixComponentJacksonConfig implements ContextResolver<ObjectMap
         super();
 
         this.objectMapper = new ObjectMapper();
-        this.objectMapper.registerModule(new SynaptixSimpleModule());
+        this.objectMapper.registerModule(new SynaptixComponentModule());
     }
 
     @Override

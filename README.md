@@ -15,3 +15,14 @@ Ajouter dans le pom.xml :
 	<version>1.0.0</version>
 </dependency>
 ```
+
+## Utilisation
+
+Si pas de définition de nouveau module pour `ObjectMapper`, ajouter à Resteasy `SynaptixComponentJacksonConfig`.
+
+Sinon ajouter le module à votre `ObjectMapper`
+
+``` java
+objectMapper = new ObjectMapper();
+objectMapper.registerModule(new SynaptixComponentModule());
+```

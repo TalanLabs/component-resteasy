@@ -3,9 +3,9 @@ package com.synaptix.componentresteasy;
 import org.codehaus.jackson.Version;
 import org.codehaus.jackson.map.module.SimpleModule;
 
-public class SynaptixSimpleModule extends SimpleModule {
+public class SynaptixComponentModule extends SimpleModule {
 
-    public SynaptixSimpleModule() {
+    public SynaptixComponentModule() {
         super("SynaptixComponentModule", new Version(1, 0, 0, null));
 
         this.addSerializer(new ComponentSerializer());
