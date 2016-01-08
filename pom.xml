@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.synaptix</groupId>
 	<artifactId>component-resteasy</artifactId>
-	<version>1.1.0-SNAPSHOT</version>
+	<version>1.2.0-SNAPSHOT</version>
 
 	<name>Component for Resteasy</name>
 
@@ -69,6 +69,50 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>synaptix-releases-repository</id>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<url>http://nexus.synaptix-labs.com/content/groups/public_release</url>
+		</repository>
+		<repository>
+			<id>synaptix-snapshots-repository</id>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<url>http://nexus.synaptix-labs.com/content/groups/public_snapshots</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>synaptix-releases-repository</id>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<url>http://nexus.synaptix-labs.com/content/groups/public_release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>synaptix-snapshots-repository</id>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<url>http://nexus.synaptix-labs.com/content/groups/public_snapshots</url>
+		</pluginRepository>
+	</pluginRepositories>
 	<dependencies>
 		<!-- SERVLET -->
 		<dependency>

@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class ComponentDeserializers extends SimpleDeserializers {
 
-    private ConcurrentHashMap<Class<?>, JsonDeserializer<?>> map = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Class<?>, JsonDeserializer<?>> map = new ConcurrentHashMap<Class<?>, JsonDeserializer<?>>();
 
     @Override
     public JsonDeserializer<?> findBeanDeserializer(JavaType type, DeserializationConfig config, DeserializerProvider provider, BeanDescription beanDesc, BeanProperty property)
