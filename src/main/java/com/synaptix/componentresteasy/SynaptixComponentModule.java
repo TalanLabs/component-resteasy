@@ -9,6 +9,6 @@ public class SynaptixComponentModule extends SimpleModule {
         super("SynaptixComponentModule", new Version(1, 0, 0, null));
 
         this.addSerializer(new ComponentSerializer());
-        this.setDeserializers(new ComponentDeserializers());
+        this.setValueInstantiators(new ComponentValueInstantiators());
     }
 }
