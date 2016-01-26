@@ -12,7 +12,7 @@ Ajouter dans le pom.xml :
 <dependency>
 	<groupId>com.synaptix</groupId>
 	<artifactId>component-resteasy</artifactId>
-	<version>1.0.0</version>
+	<version>1.2.0</version>
 </dependency>
 ```
 
@@ -25,4 +25,10 @@ Sinon ajouter le module à votre `ObjectMapper`
 ``` java
 objectMapper = new ObjectMapper();
 objectMapper.registerModule(new SynaptixComponentModule());
+```
+
+Si vous avez des champs dans le Json qui ne sont pas dans votre Component ajouter
+
+``` java
+this.objectMapper.disable(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES);
 ```
