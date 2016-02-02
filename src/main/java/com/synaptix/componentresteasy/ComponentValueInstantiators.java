@@ -11,7 +11,7 @@ public class ComponentValueInstantiators extends SimpleValueInstantiators {
 
     @Override
     public ValueInstantiator findValueInstantiator(DeserializationConfig config, BeanDescription beanDesc, ValueInstantiator defaultInstantiator) {
-        if (ComponentFactory.isClass(beanDesc.getBeanClass())) {
+        if (ComponentFactory.getInstance().isComponentType(beanDesc.getBeanClass())) {
             defaultInstantiator = new ComponentValueInstantiator((Class<? extends IComponent>) beanDesc.getBeanClass(), defaultInstantiator);
         }
         return super.findValueInstantiator(config, beanDesc, defaultInstantiator);
