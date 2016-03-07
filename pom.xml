@@ -21,28 +21,28 @@
         <jax-rs.version>1.1.1</jax-rs.version>
     </properties>
     <organization>
-        <name>Synaptix-Labs</name>
-        <url>http://www.synaptix-labs.com</url>
+        <name>Talanlabs</name>
+        <url>http://www.talanlabs.com</url>
     </organization>
     <developers>
         <developer>
             <name>Gabriel Allaigre</name>
-            <email>gabriel.allaigre@synaptix-labs.com</email>
-            <organization>Synaptix Labs</organization>
-            <organizationUrl>www.synaptix-labs.com</organizationUrl>
+            <email>gabriel.allaigre@talanlabs.com</email>
+            <organization>Talanlabs</organization>
+            <organizationUrl>www.talanlabs.com</organizationUrl>
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:https://gitlab.synaptix-labs.com/synaptix/component-resteasy.git</connection>
-        <url>https://gitlab.synaptix-labs.com/synaptix/component-resteasy</url>
+        <connection>scm:git:https://gitlab.talanlabs.com/synaptix/component-resteasy.git</connection>
+        <url>https://gitlab.talanlabs.com/synaptix/component-resteasy</url>
     </scm>
     <ciManagement>
         <system>gitlab-ci</system>
-        <url>https://gitlab.synaptix-labs.com/synaptix/component-resteasy</url>
+        <url>https://gitlab.talanlabs.com/synaptix/component-resteasy</url>
     </ciManagement>
     <issueManagement>
         <system>gitlab</system>
-        <url>https://gitlab.synaptix-labs.com/synaptix/component-resteasy/issues</url>
+        <url>https://gitlab.talanlabs.com/synaptix/component-resteasy/issues</url>
     </issueManagement>
     <build>
         <plugins>
@@ -81,46 +81,46 @@
     </build>
     <repositories>
         <repository>
-            <id>synaptix-releases-repository</id>
+            <id>talanlabs-releases-repository</id>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-            <url>http://nexus.synaptix-labs.com/content/groups/public_release</url>
+            <url>http://nexus.talanlabs.com/content/groups/public_release</url>
         </repository>
         <repository>
-            <id>synaptix-snapshots-repository</id>
+            <id>talanlabs-snapshots-repository</id>
             <releases>
                 <enabled>false</enabled>
             </releases>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <url>http://nexus.synaptix-labs.com/content/groups/public_snapshots</url>
+            <url>http://nexus.talanlabs.com/content/groups/public_snapshots</url>
         </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>synaptix-releases-repository</id>
+            <id>talanlabs-releases-repository</id>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-            <url>http://nexus.synaptix-labs.com/content/groups/public_release</url>
+            <url>http://nexus.talanlabs.com/content/groups/public_release</url>
         </pluginRepository>
         <pluginRepository>
-            <id>synaptix-snapshots-repository</id>
+            <id>talanlabs-snapshots-repository</id>
             <releases>
                 <enabled>false</enabled>
             </releases>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <url>http://nexus.synaptix-labs.com/content/groups/public_snapshots</url>
+            <url>http://nexus.talanlabs.com/content/groups/public_snapshots</url>
         </pluginRepository>
     </pluginRepositories>
     <dependencies>
@@ -164,12 +164,12 @@
     </dependencies>
     <distributionManagement>
         <repository>
-            <id>synaptix-releases-repository</id>
-            <url>http://nexus.synaptix-labs.com/content/repositories/releases/</url>
+            <id>talanlabs-releases-repository</id>
+            <url>http://nexus.talanlabs.com/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>synaptix-snapshots-repository</id>
-            <url>http://nexus.synaptix-labs.com/content/repositories/snapshots/</url>
+            <id>talanlabs-snapshots-repository</id>
+            <url>http://nexus.talanlabs.com/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
