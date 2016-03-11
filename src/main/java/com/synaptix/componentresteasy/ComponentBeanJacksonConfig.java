@@ -9,15 +9,15 @@ import javax.ws.rs.ext.Provider;
 
 @Provider
 @Produces(MediaType.APPLICATION_JSON)
-public class SynaptixComponentJacksonConfig implements ContextResolver<ObjectMapper> {
+public class ComponentBeanJacksonConfig implements ContextResolver<ObjectMapper> {
 
     private ObjectMapper objectMapper;
 
-    public SynaptixComponentJacksonConfig() {
+    public ComponentBeanJacksonConfig() {
         super();
 
         this.objectMapper = new ObjectMapper();
-        this.objectMapper.registerModule(new SynaptixComponentModule());
+        this.objectMapper.registerModule(new ComponentBeanModule());
     }
 
     @Override

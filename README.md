@@ -12,19 +12,19 @@ Ajouter dans le pom.xml :
 <dependency>
 	<groupId>com.synaptix</groupId>
 	<artifactId>component-resteasy</artifactId>
-	<version>2.0.0</version>
+	<version>2.1.0-SNAPSHOT</version>
 </dependency>
 ```
 
 ## Utilisation
 
-Si pas de définition de nouveau module pour `ObjectMapper`, ajouter à Resteasy `SynaptixComponentJacksonConfig`.
+Si pas de définition de nouveau module pour `ObjectMapper`, ajouter à Resteasy `ComponentBeanJacksonConfig`.
 
 Sinon ajouter le module à votre `ObjectMapper`
 
 ``` java
 objectMapper = new ObjectMapper();
-objectMapper.registerModule(new SynaptixComponentModule());
+objectMapper.registerModule(new ComponentBeanModule());
 ```
 
 Si vous avez des champs dans le Json qui ne sont pas dans votre Component ajouter
