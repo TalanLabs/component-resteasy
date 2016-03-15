@@ -16,7 +16,7 @@
 
         <!-- server -->
         <servlet-api.version>2.5</servlet-api.version>
-        <component-bean.version>1.2.0-SNAPSHOT</component-bean.version>
+        <component-bean.version>2.0.0</component-bean.version>
         <resteasy.version>3.0.16.Final</resteasy.version>
         <jax-rs.version>1.1.1</jax-rs.version>
     </properties>

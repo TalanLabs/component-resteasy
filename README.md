@@ -12,7 +12,7 @@ Ajouter dans le pom.xml :
 <dependency>
 	<groupId>com.synaptix</groupId>
 	<artifactId>component-resteasy</artifactId>
-	<version>2.1.0-SNAPSHOT</version>
+	<version>2.1.0</version>
 </dependency>
 ```
 
